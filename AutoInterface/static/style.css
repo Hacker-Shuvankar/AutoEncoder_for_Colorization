@@ -1,0 +1,134 @@
+body, h1, form, button, footer, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.file-label {
+    background-color: #333;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.file-label:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #333;
+    padding: 16px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+button#cancelButton {
+    background-color: #666;
+    color: #fff;
+    border: 2px solid #666;
+}
+
+button#cancelButton:hover {
+    background-color: #444;
+}
+
+.no-file-message {
+    color: #d9534f;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.preview-container, .result {
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#colorizedImage {
+    display: none;
+}
+
+a#downloadLink {
+    display: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a#downloadLink:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#error-message {
+    color: #d9534f;
+    font-size: 16px;
+}
